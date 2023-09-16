@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Api</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        font-family: monospace;
+      }
+      a {
+        text-decoration: none;
+        color: brown;
+      }
+      a:hover {
+        color: rgb(46, 172, 146);
+      }
+    </style>
+  </head>
+  <body>
+   
+    <h1>*************For testing using the hosted url*************</h1>
+    <h1>
+      The api is hosted on
+      <a href="https://hospitalapi-yb7y.onrender.com/"
+        >https://hospitalapi-yb7y.onrender.com/</a
+      >
+    </h1>
+
+    <h1>
+      Below are the list of working routes which you can test using postman
+    </h1>
+
+    <ul>
+      <h2>***For Doctor***</h2>
+      <li>
+        <b>api/v1/doctors/register</b> : This(POST request) will handle the registration of new
+        doctor
+      </li>
+      <li>
+        <b>api/v1/doctors/login</b> : This(GET request) is create the jwt token which is
+        required to perform all patients related operations.
+      </li>
+    </ul>
+
+    <br />
+    <hr />
+    <ul>
+      <h2>***For Patients***</h2>
+      <i
+        ><h4>
+          [Note: Make sure all the below operations will require to pass the
+          authorisation token in header]
+        </h4></i
+      >
+      <li>
+        <b>api/v1/patients/register</b> : This(POST request) will handle the registration of
+        new patient.
+      </li>
+      <li>
+        <b>api/v1/patients/create_report/:phone </b>: This(GET request) will generate the
+        report of a particular patient.Pass the phone number of the patient in
+        params.
+      </li>
+      <li>
+        <b>api/v1/patients/all_reports</b> : This(GET request) will genarate all patients
+        report.No need to pass any phone number
+      </li>
+      <li>
+        <b>api/v1/patients/update_status/:phone </b>: This(GET request) will update the
+        current checkup status of the patient.Pass the phone number of the
+        patient in params.Also add a key 'newstatus' in the body and the value
+        should be new status.
+      </li>
+      <li>
+        <b>api/v1/patients/status/:status </b>: This(GET request) is generate all the patient
+        report of a particular status.Pass the state code in the params.
+      </li>
+    </ul>
+    <br />
+  </body>
+</html>
