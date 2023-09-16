@@ -1,6 +1,6 @@
 
 *************For testing using the hosted url*************
-the api is hosted on "https://hospitalapi-yb7y.onrender.com/"
+the api is hosted on "https://hospital-api-yqwy.onrender.com"
 This will open the homepage where some details are given
 
 Below are the list of working routes which you can test using postman
