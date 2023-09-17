@@ -36,11 +36,11 @@
       <h2>***For Doctor***</h2>
       <li>
         <b>api/v1/doctors/register</b> : This(POST request) will handle the registration of new
-        doctor
+        doctor (pass name,email,password,confirm_password in the body of postman).
       </li>
       <li>
         <b>api/v1/doctors/login</b> : This(GET request) is create the jwt token which is
-        required to perform all patients related operations.
+        required to perform all patients related operations.(pass email,password into the body) to test.
       </li>
     </ul>
 
@@ -56,7 +56,8 @@
       >
       <li>
         <b>api/v1/patients/register</b> : This(POST request) will handle the registration of
-        new patient.
+        new patient.(pass name,phone,age,status["Negative", "Travelled-Quarantine", "Symptoms-Quarantine",
+        "Positive-Admit"] any one of these status,doctor id from database into the body of postman tool).
       </li>
       <li>
         <b>api/v1/patients/create_report/:phone </b>: This(GET request) will generate the
@@ -75,7 +76,7 @@
       </li>
       <li>
         <b>api/v1/patients/status/:status </b>: This(GET request) is generate all the patient
-        report of a particular status.Pass the state code in the params.
+        report of a particular status.Pass the status in the params.
       </li>
     </ul>
     <br />
