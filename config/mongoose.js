@@ -2,7 +2,8 @@
 const mongoose = require('mongoose');
 
 // connect to the database
-mongoose.connect('mongodb://127.0.0.1:27017/hospital_api');
+mongoose.connect('mongodb+srv://adarshsingh933:dtiQlQPbFV3CLt9e@cluster0.zmo2g2g.mongodb.net/Hospital_Api');
+
 
 // aquire the connection (to check if it is successful)
 const db = mongoose.connection;
